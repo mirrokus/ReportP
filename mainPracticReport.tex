@@ -1,0 +1,55 @@
+\documentclass[14pt]{extarticle}
+%------байда для русского текста в формулах
+\usepackage{mathtext}         % если нужны русские буквы в формулах (не обязательно)
+\usepackage[T2A]{fontenc}     % внутренняя T2A кодировка TeX
+\usepackage[utf8]{inputenc} % кодировка - можно использовать [cp866] [cp1251]
+%------до седова байда
+\usepackage[russian,english]{babel}
+\usepackage{amsmath}
+\usepackage{geometry} % Меняем поля страницы
+\geometry{left=1cm}% левое поле
+\geometry{right=2cm}% правое поле
+\geometry{top=2cm}% верхнее поле
+\geometry{bottom=2cm}% нижнее поле
+\usepackage{graphicx}%рисунки
+%\usepackage{pgf}
+\usepackage{pgfplotstable}
+%\usepackage{pscyr}\usepackage{colordvi}
+\usepackage{listings}
+
+\usepackage{longtable}
+
+%для того чтобы не писать свое фио и группу везде
+\newcommand{\mygroup}{студент группы ПВТ-Д-4}
+\newcommand{\myname}{Барышников Н. М.}
+%имя преподавателя
+\newcommand{\prname}{ст. преподаватель Денисов А. А. }
+%дисциплина
+\newcommand{\discip}{Параллельные системы и параллельное программирование}
+%номер лабы
+\newcommand{\numlab}{1}
+%тема
+\newcommand{\labtheme}{Поиск максимального элемента массива с использованием нескольких thread'ов}
+%\renewcommand{\labelenumii}{\arabic{enumi}.\arabic{enumii}.}%страшное переопределение счетчика для %того чтобы вложенные списки были вида 1 1.1 1.2 1.3/2 2.1 2.2 а не 1 a b c 2 a b c
+%\renewcommand{\theenumi}{\Asbuk{enumi})}%нумеруем списки буквами
+\renewcommand{\labelenumi}{\theenumi.}
+%далее идет фигня про колонтитулы
+%\usepackage{fancyhdr}%ибо не врубился как переопределять стандартные
+%\fancyhf{}%сбиваю настройки пакета
+%\pagestyle{fancy}%выбираю стить
+%\fancyhead[RO]{\myname}%верхний колонтитул надпись справа
+%\fancyhead[LO]{}%верхний колонтитул надпись слева
+%\fancyfoot[CO]{\bfseries\thepage}%нижний колонтитул надпись по центру(номера страниц)
+%\renewcommand{\headrulewidth}{0.5pt}
+%\renewcommand{\footrulewidth}{0pt}
+%\addtolength{\headheight}{0.5pt} % оставляем место для линейки
+%\fancypagestyle{plain}{%
+%  fancyhead{} % на обычных страницах убираем колонтитулы
+%   renewcommand{\headrulewidth}{0pt} % и линейку
+%}
+  % убираем текущие установки для колонтитулов
+  
+\begin{document}
+\include{EnterpriseStructure}
+\include{csharp}
+\end{document}
